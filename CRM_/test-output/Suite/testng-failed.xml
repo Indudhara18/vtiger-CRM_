@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test name="Test(failed)">
+    <classes>
+      <class name="com.autodeskcrm.contacttest.CreateContactWithOrganizationName">
+        <methods>
+          <include name="createContactWithOrgtest"/>
+        </methods>
+      </class> <!-- com.autodeskcrm.contacttest.CreateContactWithOrganizationName -->
+      <class name="com.autodeskcrm.contacttest.CreateContactAndDeleteContactAswellAsOrg">
+        <methods>
+          <include name="deletContact"/>
+        </methods>
+      </class> <!-- com.autodeskcrm.contacttest.CreateContactAndDeleteContactAswellAsOrg -->
+      <class name="com.autodeskcrm.orgtest.CreateOrganizationTest">
+        <methods>
+          <include name="createOrganization"/>
+        </methods>
+      </class> <!-- com.autodeskcrm.orgtest.CreateOrganizationTest -->
+      <class name="com.autodeskcrm.orgtest.DeleteOrganizationAndVerifyDeleteTest">
+        <methods>
+          <include name="loginToAplication"/>
+          <include name="openBrowser"/>
+          <include name="logoutApplication"/>
+        </methods>
+      </class> <!-- com.autodeskcrm.orgtest.DeleteOrganizationAndVerifyDeleteTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
